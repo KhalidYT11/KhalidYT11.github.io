@@ -1,14 +1,96 @@
-<html>
-  <head>
-    <title>Kalhlaly95 Website</title>
-  </head>
-  <body>
-    <p style="font-family:sans-serif;">hello and welcome back to my website</p>
-    <a style="font-family:sans-serif" href="https://youtube.com/@Kalhlaly95TV">YouTube</a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MrKaminK11 Cyber Hub</title>
+  
+  <!-- 1. Import Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- 2. Import Cascadia Code Font (using a known CDN link) -->
+  <!-- We use a regular style block to import the font CSS -->
+  <style> 
+    @import url('https://fonts.cdnfonts.com/css/cascadia-code'); 
+  </style>
+
+  <!-- 3. Configure Tailwind to use the Cascadia Code font and a dark theme -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            // Set 'cascadia' utility class and fallback stack
+            'cascadia': ['"Cascadia Code"', 'Consolas', 'monospace'],
+          },
+          colors: {
+            'dark-bg': '#111111',
+            'code-green': '#00ff7f',
+            'text-light': '#ffffff',
+            'terminal-blue': '#4c7cff',
+          }
+        },
+      }
+    }
+  </script>
+</head>
+
+<!-- Apply the dark background and the new font globally -->
+<body class="bg-dark-bg text-text-light font-cascadia min-h-screen flex items-center justify-center p-4">
+
+  <!-- Main Container: Center content and limit width for mobile readability -->
+  <div class="w-full max-w-sm bg-[#1e1e1e] border-2 border-code-green/50 rounded-xl shadow-lg p-6 space-y-6 md:max-w-md">
     
-    <p style="font-family:sans-serif;">My github</p>
+    <!-- Header/Welcome -->
+    <header class="text-center">
+      <h1 class="text-3xl font-bold text-code-green tracking-wider mb-2">
+        <span class="animate-pulse">_</span> C Y B E R &nbsp; H U B
+      </h1>
+      <p class="text-sm text-text-light/80">
+        hello and welcome back to my website!
+      </p>
+    </header>
+
+    <!-- Content Sections -->
     
-    <a style="font-family:sans-serif;" href="https://github.com/Kalhlaly95YT">Github</a>
-    <p style="font-family:sans-serif;">that's it, Goodbye</p>
-  </body>
+    <div class="space-y-4">
+      <!-- YouTube Link -->
+      <p class="text-lg text-text-light/90">
+        // Find me on YouTube:
+      </p>
+      <a 
+        href="https://youtube.com/@MrKaminK11" 
+        target="_blank" 
+        class="block w-full text-center py-3 px-4 rounded-lg bg-red-600 hover:bg-red-700 transition duration-300 transform hover:scale-[1.02] active:scale-95 text-text-light font-bold shadow-md shadow-red-600/50"
+      >
+        <span class="inline-block mr-2">▶️</span> YouTube Channel
+      </a>
+
+      <!-- GitHub Link -->
+      <p class="text-lg text-text-light/90 pt-4">
+        // My main GitHub profile:
+      </p>
+      <a 
+        href="https://github.com/KhalidYT11" 
+        target="_blank" 
+        class="block w-full text-center py-3 px-4 rounded-lg bg-terminal-blue hover:bg-blue-600 transition duration-300 transform hover:scale-[1.02] active:scale-95 text-text-light font-bold shadow-md shadow-terminal-blue/50"
+      >
+        <span class="inline-block mr-2">⚙️</span> View My GitHub Code
+      </a>
+    </div>
+
+    <!-- Footer/Farewell -->
+    <footer class="pt-6 text-center border-t border-code-green/30">
+      <p class="text-sm text-text-light/70">
+        > that's it, Goodbye
+      </p>
+      <p class="text-xs text-code-green/50 mt-1">
+        $ exit
+      </p>
+    </footer>
+    
+  </div>
+</body>
 </html>
+
+
